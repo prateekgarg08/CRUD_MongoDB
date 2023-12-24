@@ -1,5 +1,6 @@
 import TopicsList from "@/components/TopicsList";
 
 export default function Home() {
-  return <TopicsList />;
+  return <div>Setting!! please wait</div>;
+  // return <TopicsList />;
 }
