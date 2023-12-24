@@ -18,7 +18,7 @@ export default function AddTopic() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/topics", {
+      const res = await fetch(`${process.env.PRODUCTION_URL}/api/topics`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -54,10 +54,7 @@ export default function AddTopic() {
         placeholder="Topic Description"
       />
 
-      <button
-        type="submit"
-        className="bg-green-600 font-bold text-white py-3 px-6 w-fit"
-      >
+      <button type="submit" className="bg-green-600 font-bold text-white py-3 px-6 w-fit">
         Add Topic
       </button>
     </form>
